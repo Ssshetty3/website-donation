@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DONATE</title>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+    <style>
+      h2 {text-align: center;}
+      p {text-align: center;}
+      a {text-align: center;}
+      .centerr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         
+      }
+
+      .fa {  
+        padding: 15px;  
+      text-align: left;  
+        margin: 2px 2px;  
+        font-size: 15px;  
+        width: 20px;  
+      }  
+      .fa-facebook {  
+        background: #3B5998;  
+        color: white;  
+      }  
+      .fa-twitter {  
+        background: #55ACEE;  
+        color: white;  
+      }  
+      .fa-linkedin {  
+        background: #007bb5;  
+        color: white;  
+      }  
+
+      .fcc-btn {
+        background-color: #199319;
+        color: white;
+        padding: 25px 35px;
+        text-decoration: none;
+      }
+      .fcc-btn:hover {
+        background-color: #223094;
+      }
+      P.blocktext {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50em
+    }
+    
+      ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#footer {
+  background-color: rgb(12, 7, 7);
+  color: white;
+  padding: 5px;
+  height: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.columnn {
+  flex: 33.33%;
+  height: 200px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #cdf8eb;
+  text-align: center;
+}
+  .columnnn {
+      flex: 33.33%;
+      height: 200px;
+      padding: 10px;
+      margin: 5px;
+      background-color: #f0efb8;
+      text-align: center;
+    }
+    .colunn {
+      flex: 33.33%;
+      height: 200px;
+      padding: 10px;
+      margin: 5px;
+      background-color: #e5bbe9;
+      text-align: center;
+    }
+.containerr {
+   display: flex;
+}	
+
+    </style>
+
+  </head>
+  <body>
+    <ul>
+  <li><a a class="active" href="index.html">Home</a></li>
+  <li><a href="contact.html">Donate</a></li>
+</ul>
+<h1>Sparks Foundation <img
+  src="logo.png"
+  width="50"
+  height="40"
+  class="Logo" /> </h1>
+
+  <br>
+  <br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="i1080x475.jpg">
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="donate-2.jpg" style="width:100%">
+  <div class="text">Help For Happiness</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+<br>
+<div class="centerr">
+  <a target="_blank" class="fcc-btn" href="contact.html">DONATE</a>  
+</div>
+<br>
+<br>
+<h2 style="font-size:25px"> <u style="text-decoration-color:rgb(255, 102, 0)">ABOUT</u></h2>
+<p style="font-size:20px" class="blocktext">We are an Indian development organization, 
+  impacting the lives of over 15 lakh children and their families every year. 
+  We have more than 400 projects on education, healthcare, livelihood, and women 
+  empowerment in over 2,000 remote villages and urban slums across 25 states of India.</p>
+<p style="font-size:20px" class="blocktext">We work as a catalyst in the cycle of change, complementing and 
+  supplementing government efforts to achieve the Sustainable Development
+   Goals.We sensitize and partner with like-minded institutions and individuals to 
+  implement high-impact programmes that enable access, enhance quality and help bring 
+  long term behavioural change at the grassroots.</p>
+  <br>
+  <br>
+  <br>
+<br>
+<h2 style="font-size:25px"> <u style="text-decoration-color:rgb(255, 102, 0)">Our Impact</u></h2>
+<p style="font-size:20px" class="blocktext">Your one act of kindness can change someone's life forever</p>
+<p style="font-size:20px" class="blocktext">Donate money to those in need</p>
+<p><img src="\number.png" alt="number" class="center"></p>
+
+  <br>
+  <br>
+  <br>
+  <h2 style="font-size:25px"> <u style="text-decoration-color:rgb(255, 102, 0)">How It Works</u></h2>
+	<div class="containerr">
+	   <div class="columnn">
+	     <h2> Donate </h2>
+		 <p> It'll take only 2 minutes. Just donate the amount of your wish. </p>
+	   </div>
+	   <div class="columnnn">
+	     <h2>Share</h2>
+		 <p> All you need to do is share the website with your friends and family. In no time, support will start pouring in.</p>
+	   </div>
+	   <div class="colunn">
+	     <h2> Advertising support </h2>
+		 <p> We provide marketing and promotional support for our website.</p>
+	   </div>
+	</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <section id="footer">
+    <div class="footertext">
+      <h5>For any enquires : &nbsp   Email-ssdonation@gmail.com  &nbsp  Contact No- 71233456789     </h5>
+      <h5>© 2023 | All rights reserved.</h5>
+    <h5>Owner Shreya Shetty</h5>
+    <h5><a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-linkedin"></a></h5>
+
+    </div>
+  </body>
+</html>
+
+
+
+
+
