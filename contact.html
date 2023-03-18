@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Payment Form</title>
     <link href="paymentform.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -287,28 +287,28 @@
           </div>
       </div>
       
-      <div class="input-group">
-          <div class="input-box">
-            <a class="fcc-btn">
-              <button type="submit" id="btn" onclick="window.location.href='successful.html';">SUBMIT
-              
-              </a>
-          </div>
-      </div>
+      
+          
+            
+      
           </form>
+          <a class="fcc-btn">
+            <button onclick="window.location.href='successful.html';">SUBMIT</button></a>
+        
           </div>
         
-      </div>
-  </form>
-</div>
+      
+
 <section id="footer">
   <div class="footertext">
     <h5>© 2023 | All rights reserved.</h5>
     <h5>Owner Shreya Shetty</h5>
+    </div>
+    </section>
 </body>
 
 
-<!-- <script>
+ <script>
     var btn = document.getElementById('btn')
     btn.addEventListener('click', function(e) {
       e.preventDefault()
@@ -316,11 +316,11 @@
     var email = document.getElementById('email').value;
     var pat = document.getElementById('pay').value;
     var amount = document.getElementById('amount').value; 
-    var body = 'Name' +name+ '<br/> Email:' +email+  '<br/> Payment Type:' +pay+  '<br/> Paid Amount:' +amount ;
+    var body = 'Name:' +name+ '<br/> Email:' +email+  '<br/> Payment Type:' +pay+  '<br/> Paid Amount:' +amount ;
     
     Email.send({
       Host : "smtp.elasticemail.com",
-      Username : "senderemail.com",
+      Username : "donation",
       Password : "password",
       To : 'recevieremail.com',
       From : email ,
@@ -328,7 +328,7 @@
       Body : body
   })
 })
-  </script>      <button type="submit" id="btn" onclick="window.location.href='successful.html';">  -->
+  </script>      <button type="submit" id="btn" onclick="window.location.href='successful.html';">  
 
 </html>
 
